@@ -132,9 +132,8 @@ class SkeletonOptimizationAgent(BaselineAgent):
             "truck_bay_positions",
             [(grid.width // 2, grid.height // 2)]
         )
-        # -------------------
+
         # Phase 1: Frequency
-        # -------------------
         if current_timestep % 100 == 0:
             item_frequency = grid.item_access_frequency
             if item_frequency is not None and len(item_frequency) > 0:
